@@ -1,0 +1,375 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:MAX13432EETD
+LIBS:mounting_hole
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:WIZnet_W5500_MagJack-cache
+LIBS:lm25576mh
+LIBS:BBB-Cape-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM25576MH U1
+U 1 1 5A1B0909
+P 4650 3600
+F 0 "U1" H 4300 4450 60  0000 C CNN
+F 1 "LM25576MH" H 4500 2800 60  0000 C CNN
+F 2 "Housings_SSOP:HTSSOP-20-1EP_4.4x6.5mm_Pitch0.65mm_ThermalPad" H 4650 3100 60  0001 C CNN
+F 3 "" H 4650 3100 60  0001 C CNN
+	1    4650 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 5A1B1040
+P 4650 5150
+F 0 "#PWR011" H 4650 4900 50  0001 C CNN
+F 1 "GND" H 4650 5000 50  0000 C CNN
+F 2 "" H 4650 5150 50  0001 C CNN
+F 3 "" H 4650 5150 50  0001 C CNN
+	1    4650 5150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3950 3050
+NoConn ~ 3950 3500
+$Comp
+L C C3
+U 1 1 5A1B4EE7
+P 3050 4600
+F 0 "C3" H 3075 4700 50  0000 L CNN
+F 1 "270pF" H 3075 4500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3088 4450 50  0001 C CNN
+F 3 "" H 3050 4600 50  0001 C CNN
+	1    3050 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 5A1B5004
+P 5950 2850
+F 0 "C5" H 5975 2950 50  0000 L CNN
+F 1 "22nF" H 5975 2750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5988 2700 50  0001 C CNN
+F 3 "" H 5950 2850 50  0001 C CNN
+	1    5950 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 5A1B50FB
+P 2600 4600
+F 0 "C2" H 2625 4700 50  0000 L CNN
+F 1 "0.1uF" H 2625 4500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2638 4450 50  0001 C CNN
+F 3 "" H 2600 4600 50  0001 C CNN
+	1    2600 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5A1B5168
+P 2200 4600
+F 0 "C1" H 2225 4700 50  0000 L CNN
+F 1 "1.00uF" H 2225 4500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2238 4450 50  0001 C CNN
+F 3 "" H 2200 4600 50  0001 C CNN
+	1    2200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5A1B519A
+P 3550 4600
+F 0 "R2" V 3630 4600 50  0000 C CNN
+F 1 "16.2k" V 3550 4600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3480 4600 50  0001 C CNN
+F 3 "" H 3550 4600 50  0001 C CNN
+	1    3550 4600
+	1    0    0    1   
+$EndComp
+$Comp
+L C C6
+U 1 1 5A1B5601
+P 6200 4600
+F 0 "C6" H 6225 4700 50  0000 L CNN
+F 1 "8.2nF" H 6225 4500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6238 4450 50  0001 C CNN
+F 3 "" H 6200 4600 50  0001 C CNN
+	1    6200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5A1B5BCF
+P 3750 3650
+F 0 "R3" V 3830 3650 50  0000 C CNN
+F 1 "22.1k" V 3750 3650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3680 3650 50  0001 C CNN
+F 3 "" H 3750 3650 50  0001 C CNN
+	1    3750 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L C C4
+U 1 1 5A1B5C2F
+P 3400 3650
+F 0 "C4" H 3425 3750 50  0000 L CNN
+F 1 "1.80nF" H 3425 3550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3438 3500 50  0001 C CNN
+F 3 "" H 3400 3650 50  0001 C CNN
+	1    3400 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5A1B6172
+P 7700 4350
+F 0 "R4" V 7780 4350 50  0000 C CNN
+F 1 "3.09k" V 7700 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7630 4350 50  0001 C CNN
+F 3 "" H 7700 4350 50  0001 C CNN
+	1    7700 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L R R5
+U 1 1 5A1B63CA
+P 7700 4800
+F 0 "R5" V 7780 4800 50  0000 C CNN
+F 1 "1.02k" V 7700 4800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7630 4800 50  0001 C CNN
+F 3 "" H 7700 4800 50  0001 C CNN
+	1    7700 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L D D2
+U 1 1 5A1B670A
+P 6250 3300
+F 0 "D2" H 6250 3400 50  0000 C CNN
+F 1 "0.455V 20.0A" H 6250 3200 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 6250 3300 50  0001 C CNN
+F 3 "" H 6250 3300 50  0001 C CNN
+	1    6250 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L L L1
+U 1 1 5A1B68D4
+P 7250 3050
+F 0 "L1" V 7200 3050 50  0000 C CNN
+F 1 "27.0uH" V 7325 3050 50  0000 C CNN
+F 2 "Inductors_SMD:L_Wuerth_HCM-1240" H 7250 3050 50  0001 C CNN
+F 3 "" H 7250 3050 50  0001 C CNN
+F 4 "Wurth Electronics Inc. 7447709470" V 7250 3050 60  0001 C CNN "Name"
+	1    7250 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C7
+U 1 1 5A1B6B1A
+P 8150 3650
+F 0 "C7" H 8175 3750 50  0000 L CNN
+F 1 "47uF" H 8175 3550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8188 3500 50  0001 C CNN
+F 3 "" H 8150 3650 50  0001 C CNN
+	1    8150 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4250 3850 4250
+Wire Wire Line
+	3850 4250 3850 5000
+Wire Wire Line
+	2200 5000 8150 5000
+Wire Wire Line
+	4650 5000 4650 5150
+Wire Wire Line
+	5350 3650 5350 3500
+Wire Wire Line
+	5350 3050 5350 3350
+Wire Wire Line
+	5350 3800 5650 3800
+Wire Wire Line
+	5650 3800 5650 5000
+Connection ~ 4650 5000
+Wire Wire Line
+	5350 3950 5650 3950
+Connection ~ 5650 3950
+Wire Wire Line
+	3050 5000 3050 4750
+Connection ~ 3850 5000
+Wire Wire Line
+	3950 3350 3950 3200
+Wire Wire Line
+	3950 3200 2200 3200
+Wire Wire Line
+	2200 1700 2200 4450
+Connection ~ 2200 3200
+Wire Wire Line
+	3950 2900 2600 2900
+Wire Wire Line
+	2600 2900 2600 4450
+Wire Wire Line
+	5350 4250 6200 4250
+Wire Wire Line
+	6200 4250 6200 4450
+Wire Wire Line
+	6200 5000 6200 4750
+Connection ~ 5650 5000
+Wire Wire Line
+	2600 4750 2600 5000
+Connection ~ 3050 5000
+Wire Wire Line
+	3950 4100 3050 4100
+Wire Wire Line
+	3050 4100 3050 4450
+Wire Wire Line
+	3950 3950 3550 3950
+Wire Wire Line
+	3550 3950 3550 4450
+Wire Wire Line
+	3550 4750 3550 5000
+Connection ~ 3550 5000
+Wire Wire Line
+	5350 4100 7700 4100
+Wire Wire Line
+	2200 4750 2200 5000
+Connection ~ 2600 5000
+Wire Wire Line
+	3950 3650 3900 3650
+Wire Wire Line
+	3600 3650 3550 3650
+Wire Wire Line
+	3100 3800 3950 3800
+Wire Wire Line
+	3100 2450 3100 3800
+Wire Wire Line
+	3100 3650 3250 3650
+Wire Wire Line
+	3100 2450 6750 2450
+Connection ~ 3100 3650
+Wire Wire Line
+	7700 5000 7700 4950
+Wire Wire Line
+	6750 4550 7700 4550
+Wire Wire Line
+	7700 4500 7700 4650
+Connection ~ 7700 4550
+Wire Wire Line
+	6750 2450 6750 4550
+Wire Wire Line
+	7700 3050 7700 4200
+Connection ~ 5350 3200
+Wire Wire Line
+	5350 3050 7100 3050
+Wire Wire Line
+	5350 2900 5350 2850
+Wire Wire Line
+	5350 2850 5800 2850
+Wire Wire Line
+	5350 3500 6250 3500
+Wire Wire Line
+	6250 3500 6250 3450
+Wire Wire Line
+	6250 3050 6250 3150
+Wire Wire Line
+	6100 2850 6400 2850
+Wire Wire Line
+	6400 2850 6400 3050
+Connection ~ 6250 3050
+Connection ~ 6400 3050
+Connection ~ 7700 4100
+Wire Wire Line
+	7400 3050 8800 3050
+Connection ~ 7700 3050
+Connection ~ 7700 5000
+$Comp
+L Conn_01x02 J10
+U 1 1 5A1B75C3
+P 1550 1800
+F 0 "J10" H 1550 1900 50  0000 C CNN
+F 1 "Conn_01x02" H 1550 1600 50  0000 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MC-G_02x3.50mm_Angled" H 1550 1800 50  0001 C CNN
+F 3 "" H 1550 1800 50  0001 C CNN
+	1    1550 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1750 1700 2200 1700
+Wire Wire Line
+	1750 1800 2000 1800
+Wire Wire Line
+	2000 1800 2000 1950
+$Comp
+L GND #PWR012
+U 1 1 5A1B771A
+P 2000 1950
+F 0 "#PWR012" H 2000 1700 50  0001 C CNN
+F 1 "GND" H 2000 1800 50  0000 C CNN
+F 2 "" H 2000 1950 50  0001 C CNN
+F 3 "" H 2000 1950 50  0001 C CNN
+	1    2000 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 8150 3050
+Text GLabel 8800 3050 2    60   Input ~ 0
+VDD_5V
+$Comp
+L C C8
+U 1 1 5A1B9E6F
+P 8150 4200
+F 0 "C8" H 8175 4300 50  0000 L CNN
+F 1 "47uF" H 8175 4100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8188 4050 50  0001 C CNN
+F 3 "" H 8150 4200 50  0001 C CNN
+	1    8150 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3500 8150 3050
+Wire Wire Line
+	8150 3800 8150 4050
+Wire Wire Line
+	8150 5000 8150 4350
+Connection ~ 6200 5000
+$EndSCHEMATC
